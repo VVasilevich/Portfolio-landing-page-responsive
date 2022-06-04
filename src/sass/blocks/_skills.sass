@@ -1,0 +1,48 @@
+.skills
+    padding-top: 120px
+    &__title
+        position: relative
+        text-align: center
+        @include before-circle
+        &:before
+            top: -6px
+            left: 50%
+            transform: translateX(-50%)
+    &__subtitle
+        text-align: center
+    &__wrapper
+        padding: 60px 10px 0 10px
+        display: grid
+        justify-content: center
+        grid-template: repeat(2, minmax(200px, auto)) / repeat(5, 200px)
+        grid-auto-rows: minmax(200px, auto)
+        gap: 13px
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 100%
+        border: 1px solid #000
+        border-radius: 25px
+        &-title
+            margin-top: 10px
+        &-subtitle
+            margin-top: 10px
+        &-level
+            display: flex
+            width: 140px
+            height: 15px
+            border: 1px solid #000
+            border-radius: 10px
+            margin-top: 6px
+            overflow: hidden
+            span
+                display: block
+                width: 24px
+                margin-right: 5px
+                height: 100%
+                background-color: $semi-dark
+                &:nth-child(5)
+                    margin-right: 0
+                    
