@@ -5,16 +5,147 @@
 @media (max-width: 1200px)
 	.container
 		max-width: 960px
+	.about
+		padding-top: 60px
+		&__wrapper
+			grid-template: minmax(245px, auto) minmax(255px, auto) / 350px 550px
+			gap: 25px 40px
+		&__skills
+			grid-template: repeat(2, minmax(116px, auto)) / repeat(2, 225px)
+	.resume
+		padding-top: 60px
+		&__wrapper
+			grid-template-columns: repeat(2, 390px)
+			column-gap: 80px
+	.skills
+		padding-top: 60px
+	.portfolio
+		padding-top: 60px
+	.contacts
+		padding-top: 60px
+		&__wrapper
+			width: 60%
 
 @media (max-width: 992px)
 	.container
 		max-width: 720px
+	.about
+		&__wrapper
+			grid-template: auto auto / 1fr
+		&__photo
+			display: none
+		&__skills
+			grid-template-columns: repeat(2, 280px)
+			gap: 20px 40px
+			justify-content: center
+	.resume
+		&__wrapper
+			grid-template-columns: 1fr
+			padding: 0px 50px
+		&__column
+			margin-top: 40px
+	.skills
+		&__wrapper
+			padding-top: 40px
+	.portfolio
+		padding-top: 40px
+		&__works
+			padding-top: 40px
+	.contacts
+		&__wrapper
+			width: 80%
 
 @media (max-width: 768px)
 	.container
 		max-width: 540px
-
+	.promo
+		padding-top: 165px
+	.about
+		padding-top: 40px
+		&__skills
+			grid-template-columns: repeat(2, 260px)
+			column-gap: 20px
+			&-item
+				grid-template-columns: 40px 190px
+	.resume
+		padding-top: 40px
+	.skills
+		padding-top: 40px
+	.portfolio
+		padding-top: 40px
+	.contacts
+		&__form
+			grid-template: 45px 190px 45px / repeat(2, 1fr)
+			gap: 15px
+		&__triggers
+			grid-template-columns: auto 1fr
+			column-gap: 45px
+			
 @media (max-width: 576px)
 	.container
 		width: 100%
 		padding: 0 10px
+	.hamburger
+		top: 10px
+		right: 10px
+	.menu
+		&__block
+			width: 250px
+			padding-left: 20px
+		&__close
+			top: 10px
+			right: 10px
+	.promo
+		&__title
+			width: 100%
+			font-size: 29px
+			line-height: 45px
+		&__btns
+			width: 280px
+	.about
+		&__skills
+			grid-template-columns: 1fr
+	.resume
+		&__wrapper
+			padding: 0 10px
+	.skills
+		&__wrapper
+			grid-template: repeat(auto-fit, minmax(130px, auto)) / repeat(auto-fit, 130px)
+			grid-auto-rows: minmax(130px, auto)
+		&__item
+			&-img
+				svg
+					height: 40px
+			&-title
+				margin-top: 5px
+			&-subtitle
+				margin-top: 5px
+			&-level
+				width: 90px
+				height: 10px
+				span
+					width: 15px
+					margin-right: 4px
+	.portfolio
+		&__works
+			grid-template: 250px / 250px
+	.contacts
+		padding-bottom: 40px
+		&__form
+			grid-template: 45px 45px 190px minmax(45px, auto) / 1fr
+		&__textarea
+			grid-column: unset
+			width: 100%
+		&__triggers
+			grid-column: unset
+			grid-template-columns: 1fr
+			column-gap: unset
+			row-gap: 20px
+		&__btn
+			order: 2
+			max-width: 220px
+			margin: 0 auto
+		&__privacy
+			width: 180px
+			margin: 0 auto
+			line-height: 18px
