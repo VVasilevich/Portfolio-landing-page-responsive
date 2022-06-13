@@ -29,6 +29,11 @@
 @media (max-width: 992px)
 	.container
 		max-width: 720px
+	.title
+		&_fz36
+			font-size: 30px
+	.divider
+		margin-top: 15px
 	.about
 		&__wrapper
 			grid-template: auto auto / 1fr
@@ -95,6 +100,11 @@
 		&__close
 			top: 10px
 			right: 10px
+	.title
+		&_fz36
+			margin-top: 13px
+			font-size: 26px
+			line-height: 36px
 	.promo
 		&__title
 			width: 100%
@@ -103,6 +113,8 @@
 		&__btns
 			width: 280px
 	.about
+		.divider
+			margin-top: 13px
 		&__skills
 			grid-template-columns: 1fr
 	.resume
@@ -131,6 +143,8 @@
 			grid-template: 250px / 250px
 	.contacts
 		padding-bottom: 40px
+		.divider
+			margin-top: 13px
 		&__form
 			grid-template: 45px 45px 190px minmax(45px, auto) / 1fr
 		&__textarea
